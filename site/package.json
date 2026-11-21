@@ -12,7 +12,8 @@
     "typecheck": "tsc --noEmit",
     "og": "node scripts/og.mjs",
     "check:links": "node scripts/check-links.mjs",
-    "serve": "node scripts/serve.mjs"
+    "serve": "node scripts/serve.mjs",
+    "indexnow": "node scripts/indexnow.mjs"
   },
   "dependencies": {
     "next": "15.5.28",

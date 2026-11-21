@@ -67,6 +67,8 @@ npm run build          # writes site/out/
 npm run check:links    # every internal link resolves; the synthetic-data notice is on every page
 ```
 
+After a deploy that adds or changes pages, `npm run indexnow` sends the live sitemap of fire-feeds.online to IndexNow (Bing and the other engines of the protocol). The key is `site/public/<key>.txt`; it is public by design. `npm run indexnow -- --dry-run` checks the key on the live site and sends nothing.
+
 ## License
 
 MIT, see [LICENSE](LICENSE).
