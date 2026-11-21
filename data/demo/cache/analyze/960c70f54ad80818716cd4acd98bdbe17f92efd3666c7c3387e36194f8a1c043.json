@@ -1,0 +1,29 @@
+{
+  "cache_format": 1,
+  "call_id": "c035",
+  "created_at": "2026-11-21T15:34:42+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "mva_with_fire",
+    "is_fire": true,
+    "location_as_heard": "County Road 12 at Kestrel Ridge Road",
+    "status": "dispatched",
+    "summary": "Engine 3, Medic 2, and Battalion 1 are dispatched to a two-vehicle crash with one vehicle on fire.",
+    "units": [
+      "Engine 3",
+      "Medic 2",
+      "Battalion 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0ffbcf56b8d564ea016b01ba1066f487d2a77ac1c183434c6c",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1069,
+    "output_tokens": 125,
+    "reasoning_tokens": 29,
+    "requests": 1
+  }
+}

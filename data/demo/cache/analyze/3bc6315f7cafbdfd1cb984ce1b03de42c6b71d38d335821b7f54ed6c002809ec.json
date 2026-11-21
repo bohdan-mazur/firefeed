@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c002",
+  "created_at": "2026-11-21T15:33:40+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 1,
+    "incident_type": "not_incident",
+    "is_fire": false,
+    "location_as_heard": null,
+    "status": "none",
+    "summary": "Engine 3 conducts a radio check with dispatch.",
+    "units": [
+      "Engine 3"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_02ee17c775e55239016b01b9d207c087d2b53ff5db15eeca26",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1020,
+    "output_tokens": 94,
+    "reasoning_tokens": 36,
+    "requests": 1
+  }
+}

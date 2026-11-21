@@ -1,0 +1,31 @@
+{
+  "cache_format": 1,
+  "call_id": "c013",
+  "created_at": "2026-11-21T15:34:00+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "structure_fire",
+    "is_fire": true,
+    "location_as_heard": "1420 Bellwether Avenue",
+    "status": "cleared",
+    "summary": "Overhaul is complete at the house fire, the fire marshal has the scene, and the listed units are back in service.",
+    "units": [
+      "Engine 1",
+      "Engine 3",
+      "Ladder 1",
+      "Engine 2",
+      "Medic 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_076d09facd57f961016b01b9e61cd487d2b58dc3c5ce4096eb",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1074,
+    "output_tokens": 132,
+    "reasoning_tokens": 35,
+    "requests": 1
+  }
+}

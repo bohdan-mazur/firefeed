@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "firefeed"
+version = "2.0.0"
+description = "Fire department radio traffic to text to structured incidents. Demo on synthetic data."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Bohdan Mazur" }]
+requires-python = ">=3.12"
+dependencies = [
+  "openai==3.57.0",
+  "jsonschema==4.26.0",
+  "python-dotenv==1.2.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==9.2.0",
+  "ruff==0.17.6",
+]
+
+[project.scripts]
+firefeed = "firefeed.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

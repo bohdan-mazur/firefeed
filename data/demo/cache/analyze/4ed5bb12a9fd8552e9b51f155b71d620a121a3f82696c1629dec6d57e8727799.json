@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c038",
+  "created_at": "2026-11-21T15:34:48+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "not_incident",
+    "is_fire": false,
+    "location_as_heard": null,
+    "status": "none",
+    "summary": "Engine 2 reports stopping at the county fuel depot to refuel and remaining available by radio.",
+    "units": [
+      "Engine 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_02145be70036c523016b01ba1622b487d28c997289e0b49f6c",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1037,
+    "output_tokens": 104,
+    "reasoning_tokens": 35,
+    "requests": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c017",
+  "created_at": "2026-11-21T15:34:06+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "vehicle_fire",
+    "is_fire": true,
+    "location_as_heard": "Gristmill Way",
+    "status": "on_scene",
+    "summary": "Engine 2 arrived at Gristmill Way and reported a pickup with heavy fire in the engine compartment and no exposures.",
+    "units": [
+      "Engine 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0ebdf50d485fdd1a016b01b9ec5b9087d2991fb67052d48b26",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1042,
+    "output_tokens": 101,
+    "reasoning_tokens": 24,
+    "requests": 1
+  }
+}

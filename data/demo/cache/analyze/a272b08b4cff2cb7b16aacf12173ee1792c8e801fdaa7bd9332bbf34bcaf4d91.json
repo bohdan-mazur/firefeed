@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c030",
+  "created_at": "2026-11-21T15:34:32+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.98,
+    "incident_type": "fire_alarm",
+    "is_fire": true,
+    "location_as_heard": "55 Wickerbrook Drive",
+    "status": "on_scene",
+    "summary": "Ladder 1 arrived at a three-story apartment building with nothing showing and is investigating the alarm.",
+    "units": [
+      "Ladder 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0599688cbac11cd0016b01ba063c9c87d2989fe75bb561466c",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1037,
+    "output_tokens": 105,
+    "reasoning_tokens": 30,
+    "requests": 1
+  }
+}

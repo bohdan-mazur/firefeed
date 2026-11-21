@@ -1,0 +1,58 @@
+# FireFeed configuration for the demo dataset: a fictional county, synthetic calls.
+# Paths are relative to this file. Secrets come from the environment or .env, never from here.
+
+[dataset]
+name = "Larkmoor County"
+synthetic = true
+input_dir = "data/demo/calls"
+output_dir = "data/demo/out"
+# The demo cache is committed, so a fresh clone reproduces the run without API calls.
+cache_dir = "data/demo/cache"
+gazetteer = "data/gazetteer.json"
+# Expected answers, read only by `firefeed evaluate`.
+spec = "data/spec.csv"
+
+[analysis]
+# gpt-5-mini and gpt-5-nano shut down on 2026-12-11; gpt-6-luna has no announced shutdown
+# (https://developers.openai.com/api/docs/deprecations, checked 2026-11-21).
+model = "gpt-6-luna"
+reasoning_effort = "low"
+max_output_tokens = 2000
+# Pass the gazetteer (streets, units, radio codes) to the model as local knowledge.
+use_gazetteer_hints = true
+# Dry-run guess for output tokens per call (JSON answer plus reasoning). Real runs record actual usage.
+estimated_output_tokens = 400
+
+# USD per 1M tokens, Standard tier.
+[analysis.price_per_million]
+input = 0.10
+cached_input = 0.01
+output = 0.50
+
+[transcribe]
+model = "gpt-transcribe"
+language = "en"
+# USD per audio minute.
+price_per_minute = 0.0045
+
+[prices]
+source = "https://developers.openai.com/api/docs/pricing"
+checked = "2026-11-21"
+
+[cluster]
+# A call with no street and no units joins an incident on the same channel heard within this window.
+window_s = 120
+# A call joins an open incident only if the incident's last call is at most this old.
+max_gap_s = 3600
+
+[limits]
+# Refuse to start if more API requests than this are needed.
+max_api_requests_per_run = 60
+# Ask for --yes when the estimate is above this many USD.
+confirm_above_usd = 0.50
+
+[notify]
+# Telegram and webhook alerts for new fire incidents. Off in the demo.
+enabled = false
+telegram = false
+webhook = false

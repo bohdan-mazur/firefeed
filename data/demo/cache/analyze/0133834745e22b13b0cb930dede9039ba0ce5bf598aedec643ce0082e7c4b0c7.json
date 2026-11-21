@@ -1,0 +1,28 @@
+{
+  "cache_format": 1,
+  "call_id": "c042",
+  "created_at": "2026-11-21T15:34:57+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "mva_with_fire",
+    "is_fire": true,
+    "location_as_heard": "County Road 12",
+    "status": "cleared",
+    "summary": "Engine 3 and Battalion 1 clear the crash and vehicle fire on County Road 12, and the roadway is back open.",
+    "units": [
+      "Engine 3",
+      "Battalion 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0dbbb82288e6d2be016b01ba1edd4887d2bd23a9552f6045e7",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1036,
+    "output_tokens": 111,
+    "reasoning_tokens": 25,
+    "requests": 1
+  }
+}

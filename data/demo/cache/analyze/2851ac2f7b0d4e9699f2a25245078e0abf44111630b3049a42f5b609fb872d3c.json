@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c022",
+  "created_at": "2026-11-21T15:34:15+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "medical",
+    "is_fire": false,
+    "location_as_heard": "66 Copperwick Lane",
+    "status": "dispatched",
+    "summary": "Medic 2 is dispatched to a 78-year-old man with difficulty breathing at 66 Copperwick Lane.",
+    "units": [
+      "Medic 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_06f6b0349e753632016b01b9f4cb7c87d2856d8a15c4e1a531",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1050,
+    "output_tokens": 72,
+    "reasoning_tokens": 0,
+    "requests": 1
+  }
+}

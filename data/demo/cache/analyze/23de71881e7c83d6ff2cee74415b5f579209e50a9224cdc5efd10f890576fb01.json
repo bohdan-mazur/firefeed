@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c026",
+  "created_at": "2026-11-21T15:34:24+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.83,
+    "incident_type": "unknown",
+    "is_fire": false,
+    "location_as_heard": "812 Ferrier",
+    "status": "on_scene",
+    "summary": "Engine 2 arrived at 812 Ferrier and will investigate the two-story residence with a gas meter.",
+    "units": [
+      "Engine 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_08da6fb526349af1016b01b9fc110087d283e41a45d4620a8a",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1035,
+    "output_tokens": 296,
+    "reasoning_tokens": 224,
+    "requests": 1
+  }
+}

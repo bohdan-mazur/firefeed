@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c027",
+  "created_at": "2026-11-21T15:34:26+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.98,
+    "incident_type": "wildland_fire",
+    "is_fire": true,
+    "location_as_heard": null,
+    "status": "under_control",
+    "summary": "Brush 4 reports the fire contained at about three acres and directs crews to mop up the edges.",
+    "units": [
+      "Brush 4"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0c6ba23fa332048c016b01b9ff855487d2abcf7fc6dd0506c0",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1045,
+    "output_tokens": 123,
+    "reasoning_tokens": 52,
+    "requests": 1
+  }
+}

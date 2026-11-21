@@ -1,0 +1,28 @@
+{
+  "cache_format": 1,
+  "call_id": "c007",
+  "created_at": "2026-11-21T15:33:51+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.91,
+    "incident_type": "unknown",
+    "is_fire": true,
+    "location_as_heard": null,
+    "status": "working",
+    "summary": "Command assigns Ladder 1 to a primary search and Engine 3 to establish a hydrant supply line.",
+    "units": [
+      "Ladder 1",
+      "Engine 3"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_01ce3ff2600772ce016b01b9dc546487d29bff22697c7dcc09",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1050,
+    "output_tokens": 201,
+    "reasoning_tokens": 127,
+    "requests": 1
+  }
+}

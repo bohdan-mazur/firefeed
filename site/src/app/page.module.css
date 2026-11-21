@@ -1,0 +1,59 @@
+.intro {
+  display: grid;
+  gap: var(--space-3);
+  padding-block: var(--space-6) var(--space-5);
+  max-width: 62rem;
+}
+
+.kicker {
+  font: 600 var(--text-xs) / 1.4 var(--font-sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-text);
+}
+
+.title {
+  max-width: 22ch;
+}
+
+.lead {
+  max-width: 68ch;
+  font-size: var(--text-lg);
+  color: var(--color-muted);
+}
+
+.numbers {
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--color-rule);
+}
+
+.numbers dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-5) 0 var(--space-4);
+}
+
+.numbers dl > div {
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+}
+
+.numbers dt {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.numbers dd {
+  margin: var(--space-1) 0 0;
+  font: 600 var(--text-2xl) / 1.1 var(--font-serif);
+}
+
+.small {
+  max-width: 70ch;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}

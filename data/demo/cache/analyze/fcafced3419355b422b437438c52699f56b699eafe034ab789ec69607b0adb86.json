@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c025",
+  "created_at": "2026-11-21T15:34:20+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "not_incident",
+    "is_fire": false,
+    "location_as_heard": null,
+    "status": "none",
+    "summary": "Battalion 1 reports going to the county emergency operations center for a red flag briefing.",
+    "units": [
+      "Battalion 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_09698fa7d0ba8e79016b01b9f9f84c87d29a7405ac5ec09832",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1041,
+    "output_tokens": 112,
+    "reasoning_tokens": 43,
+    "requests": 1
+  }
+}

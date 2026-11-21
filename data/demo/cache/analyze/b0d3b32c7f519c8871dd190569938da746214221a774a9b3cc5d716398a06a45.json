@@ -1,0 +1,28 @@
+{
+  "cache_format": 1,
+  "call_id": "c045",
+  "created_at": "2026-11-21T15:35:03+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "structure_fire",
+    "is_fire": true,
+    "location_as_heard": "Lanternfield Drive",
+    "status": "cleared",
+    "summary": "Engine 1 and Ladder 1 are clear of the kitchen fire and have turned the scene over to the homeowner.",
+    "units": [
+      "Engine 1",
+      "Ladder 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0dc21c0fdf6bc073016b01ba24703887d293c7d81e55504679",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1044,
+    "output_tokens": 108,
+    "reasoning_tokens": 27,
+    "requests": 1
+  }
+}

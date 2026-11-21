@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]" -c constraints.txt
+      - run: ruff check .
+      - run: ruff format --check .
+      - run: pytest
+      # The demo cache answers every call, so this run makes no API requests and needs no key.
+      - run: firefeed run && firefeed evaluate
+
+  site:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: site/.nvmrc
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+      - run: npm run build
+      - run: npm run typecheck
+      - run: npm run check:links
+
+  secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

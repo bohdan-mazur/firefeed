@@ -1,0 +1,44 @@
+{
+  "name": "Larkmoor County",
+  "fictional": true,
+  "note": "Every place, street, unit and person in this file is invented for the FireFeed demo.",
+  "streets": [
+    { "name": "Ashcomb Street" },
+    { "name": "Bellwether Avenue" },
+    { "name": "Bracken Shoal Road" },
+    { "name": "Copperwick Lane" },
+    { "name": "County Road 12", "aliases": ["CR 12"] },
+    { "name": "Fallowmere Road" },
+    { "name": "Ferrier Street" },
+    { "name": "Gristmill Way" },
+    { "name": "Hollin Ferry Road" },
+    { "name": "Kestrel Ridge Road" },
+    { "name": "Lanternfield Drive" },
+    { "name": "Larch Hollow Road" },
+    { "name": "Marrow Hill Road" },
+    { "name": "Ostler Street" },
+    { "name": "Quarrystone Drive" },
+    { "name": "Quillon Avenue" },
+    { "name": "Saltbox Road" },
+    { "name": "Thimble Creek Road" },
+    { "name": "Tinsmith Street" },
+    { "name": "Wickerbrook Drive" }
+  ],
+  "units": [
+    { "name": "Engine 1", "station": "Station 1" },
+    { "name": "Ladder 1", "station": "Station 1", "aliases": ["Truck 1"] },
+    { "name": "Battalion 1", "station": "Station 1", "aliases": ["Battalion Chief 1"] },
+    { "name": "Engine 2", "station": "Station 2" },
+    { "name": "Medic 2", "station": "Station 2" },
+    { "name": "Engine 3", "station": "Station 3" },
+    { "name": "Brush 4", "station": "Station 4" },
+    { "name": "Tanker 4", "station": "Station 4" }
+  ],
+  "channels": ["Dispatch", "Fireground 2", "Fireground 3"],
+  "dispatcher": "Larkmoor",
+  "radio_codes": {
+    "10-4": "message received",
+    "10-8": "back in service",
+    "10-97": "arrived on scene"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c028",
+  "created_at": "2026-11-21T15:34:28+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "gas_leak",
+    "is_fire": false,
+    "location_as_heard": "Ferrier Street",
+    "status": "working",
+    "summary": "Engine 2 reports high gas readings in a basement, has shut off the gas and is ventilating, and requests the gas utility.",
+    "units": [
+      "Engine 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0059488c13cec7d6016b01ba0167b087d2a493103c4e1b04ce",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1053,
+    "output_tokens": 125,
+    "reasoning_tokens": 46,
+    "requests": 1
+  }
+}

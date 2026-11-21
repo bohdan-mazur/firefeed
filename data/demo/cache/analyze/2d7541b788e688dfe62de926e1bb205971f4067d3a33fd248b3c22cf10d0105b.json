@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c031",
+  "created_at": "2026-11-21T15:34:35+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.91,
+    "incident_type": "fire_alarm",
+    "is_fire": true,
+    "location_as_heard": "apartment 2C",
+    "status": "cancelled",
+    "summary": "Ladder 1 found burnt food with no fire, ventilated the hallway, reset the alarm panel, and reported a false alarm.",
+    "units": [
+      "Ladder 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0e4233a024f9c49f016b01ba07e99087d29c87f1dd36b45cb1",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1048,
+    "output_tokens": 197,
+    "reasoning_tokens": 115,
+    "requests": 1
+  }
+}

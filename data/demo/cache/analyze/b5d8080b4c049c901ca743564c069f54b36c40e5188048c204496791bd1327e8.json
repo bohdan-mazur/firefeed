@@ -1,0 +1,29 @@
+{
+  "cache_format": 1,
+  "call_id": "c039",
+  "created_at": "2026-11-21T15:34:50+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "structure_fire",
+    "is_fire": true,
+    "location_as_heard": "27 Lanternfield Drive",
+    "status": "dispatched",
+    "summary": "Engine 1, Engine 2, and Ladder 1 are dispatched to a stove fire that spread to the cabinets at 27 Lanternfield Drive.",
+    "units": [
+      "Engine 1",
+      "Engine 2",
+      "Ladder 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_03b0b0cbee591842016b01ba17fdec87d280213bdebc7f9de7",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1069,
+    "output_tokens": 122,
+    "reasoning_tokens": 30,
+    "requests": 1
+  }
+}

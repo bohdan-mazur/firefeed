@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c046",
+  "created_at": "2026-11-21T15:35:04+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.98,
+    "incident_type": "smoke_investigation",
+    "is_fire": true,
+    "location_as_heard": "640 Saltbox Road",
+    "status": "dispatched",
+    "summary": "Engine 2 is dispatched to investigate heavy smoke reported behind a restaurant at 640 Saltbox Road.",
+    "units": [
+      "Engine 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_069ea7f9f39f29c2016b01ba2629f887d29d33eb38fcd11e47",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1048,
+    "output_tokens": 74,
+    "reasoning_tokens": 0,
+    "requests": 1
+  }
+}

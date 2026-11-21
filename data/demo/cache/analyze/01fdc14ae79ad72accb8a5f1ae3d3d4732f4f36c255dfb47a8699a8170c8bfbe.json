@@ -1,0 +1,28 @@
+{
+  "cache_format": 1,
+  "call_id": "c037",
+  "created_at": "2026-11-21T15:34:47+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "mva_with_fire",
+    "is_fire": true,
+    "location_as_heard": null,
+    "status": "under_control",
+    "summary": "Engine 3 reports the fire in a crashed sedan is knocked down, and Medic 2 is transporting one patient with minor injuries.",
+    "units": [
+      "Engine 3",
+      "Medic 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0e4de4f53f559107016b01ba1429b887d2a4f2e81528d9f308",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1043,
+    "output_tokens": 123,
+    "reasoning_tokens": 41,
+    "requests": 1
+  }
+}

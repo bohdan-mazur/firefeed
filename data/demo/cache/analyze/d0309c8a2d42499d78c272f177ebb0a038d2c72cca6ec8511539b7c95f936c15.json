@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c014",
+  "created_at": "2026-11-21T15:34:02+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "vehicle_fire",
+    "is_fire": true,
+    "location_as_heard": "300 Gristmill Way",
+    "status": "dispatched",
+    "summary": "Engine 2 is dispatched to a pickup truck fire in the parking lot at 300 Gristmill Way.",
+    "units": [
+      "Engine 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0be3b52dc79bab06016b01b9e7edb087d286e151a7e8343d93",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1057,
+    "output_tokens": 97,
+    "reasoning_tokens": 21,
+    "requests": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "cache_format": 1,
+  "call_id": "c012",
+  "created_at": "2026-11-21T15:32:25+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "not_incident",
+    "is_fire": false,
+    "location_as_heard": null,
+    "status": "none",
+    "summary": "Dispatch announces a red flag warning and suspension of outdoor burning permits.",
+    "units": []
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_00ff4d50031317ff016b01b986ff6087d2bbcd41d885ad227f",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1048,
+    "output_tokens": 89,
+    "reasoning_tokens": 30,
+    "requests": 1
+  }
+}

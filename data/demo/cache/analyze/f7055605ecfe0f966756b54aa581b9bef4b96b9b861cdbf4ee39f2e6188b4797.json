@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c041",
+  "created_at": "2026-11-21T15:34:55+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.86,
+    "incident_type": "structure_fire",
+    "is_fire": true,
+    "location_as_heard": "Lanternfield Command",
+    "status": "working",
+    "summary": "Ladder 1 is directed to ventilate the kitchen and clear smoke from the building.",
+    "units": [
+      "Ladder 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_044ea005d5906579016b01ba1c604887d280335a859dd0e4e2",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1044,
+    "output_tokens": 153,
+    "reasoning_tokens": 82,
+    "requests": 1
+  }
+}

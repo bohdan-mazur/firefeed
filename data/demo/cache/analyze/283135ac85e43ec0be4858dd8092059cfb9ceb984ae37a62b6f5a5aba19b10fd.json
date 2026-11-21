@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c051",
+  "created_at": "2026-11-21T15:35:16+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "other_fire",
+    "is_fire": true,
+    "location_as_heard": "Ashcomb Street",
+    "status": "under_control",
+    "summary": "Engine 1 reports the dumpster fire on Ashcomb Street is knocked down with no extension to the building.",
+    "units": [
+      "Engine 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_07f9301a6ec9ff55016b01ba31bc3087d2ab771e8b8f1f8b5b",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1041,
+    "output_tokens": 71,
+    "reasoning_tokens": 0,
+    "requests": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c009",
+  "created_at": "2026-11-21T15:32:23+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.87,
+    "incident_type": "unknown",
+    "is_fire": true,
+    "location_as_heard": null,
+    "status": "working",
+    "summary": "Ladder 1 reports the primary search of the second floor is complete with no victims found.",
+    "units": [
+      "Ladder 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0c8dd553dad2d22e016b01b98530a487d2a64b155a73535e99",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1034,
+    "output_tokens": 105,
+    "reasoning_tokens": 37,
+    "requests": 1
+  }
+}

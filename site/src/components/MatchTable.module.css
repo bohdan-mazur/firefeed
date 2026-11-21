@@ -1,0 +1,89 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+}
+
+.table th,
+.table td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-rule);
+  text-align: left;
+  vertical-align: top;
+}
+
+.table thead th {
+  font: 600 var(--text-xs) / 1.3 var(--font-sans);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.table tbody th {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.table tr:last-child th,
+.table tr:last-child td {
+  border-bottom: 0;
+}
+
+.heard {
+  display: block;
+  margin-top: 2px;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.mark {
+  white-space: nowrap;
+  color: var(--color-tone-cleared);
+  font-weight: 600;
+}
+
+.miss {
+  background: var(--color-accent-wash);
+}
+
+.miss .mark {
+  color: var(--color-tone-alert);
+}
+
+@media (max-width: 560px) {
+  .table thead {
+    display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table th,
+  .table td {
+    display: block;
+  }
+
+  .table tr {
+    padding: var(--space-2) var(--space-3);
+    border-bottom: 1px solid var(--color-rule);
+  }
+
+  .table th,
+  .table td {
+    padding: 2px 0;
+    border: 0;
+  }
+
+  .table td:nth-of-type(1)::before {
+    content: "Pipeline: ";
+    color: var(--color-muted);
+  }
+
+  .table td:nth-of-type(2)::before {
+    content: "Expected: ";
+    color: var(--color-muted);
+  }
+}

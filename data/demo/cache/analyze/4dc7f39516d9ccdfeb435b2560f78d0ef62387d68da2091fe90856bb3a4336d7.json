@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c016",
+  "created_at": "2026-11-21T15:34:05+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "not_incident",
+    "is_fire": false,
+    "location_as_heard": null,
+    "status": "none",
+    "summary": "Brush 4 reports a clear radio signal on Fireground 3.",
+    "units": [
+      "Brush 4"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_062d57f595774b5d016b01b9eb0e8087d2b25cae467d8f5e78",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1029,
+    "output_tokens": 62,
+    "reasoning_tokens": 0,
+    "requests": 1
+  }
+}

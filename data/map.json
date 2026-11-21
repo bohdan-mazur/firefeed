@@ -1,0 +1,36 @@
+{
+  "name": "Larkmoor County",
+  "fictional": true,
+  "note": "Schematic map of an invented county for the FireFeed demo. Not to scale; no real place.",
+  "size": [800, 520],
+  "town": { "name": "Larkmoor", "label": [118, 30] },
+  "water": [
+    {
+      "name": "Thimble Creek",
+      "path": [[790, 22], [735, 66], [680, 114], [628, 160], [582, 202], [548, 248], [532, 298], [534, 350], [512, 400], [462, 444], [384, 484], [296, 518]],
+      "labelAt": 0.62
+    }
+  ],
+  "streets": [
+    { "name": "Ashcomb Street", "rank": 2, "path": [[90, 95], [404, 95]], "spot": [212, 95], "labelAt": 0.62 },
+    { "name": "Bellwether Avenue", "rank": 1, "path": [[34, 155], [432, 155]], "spot": [238, 155], "labelAt": 0.05 },
+    { "name": "Ostler Street", "rank": 2, "path": [[60, 235], [404, 235]], "spot": [96, 235], "labelAt": 0.58 },
+    { "name": "Tinsmith Street", "rank": 2, "path": [[170, 52], [170, 332]], "labelAt": 0.86 },
+    { "name": "Ferrier Street", "rank": 2, "path": [[290, 60], [290, 332]], "spot": [290, 198], "labelAt": 0.86 },
+    { "name": "Quillon Avenue", "rank": 2, "path": [[386, 70], [386, 340]], "spot": [386, 304], "labelAt": 0.16 },
+    { "name": "Copperwick Lane", "rank": 3, "path": [[104, 296], [196, 296], [238, 286]], "spot": [150, 296], "labelAt": 0.35 },
+    { "name": "Lanternfield Drive", "rank": 3, "path": [[40, 326], [54, 362], [90, 384], [140, 390], [178, 378]], "spot": [92, 385], "labelAt": 0.72 },
+    { "name": "Quarrystone Drive", "rank": 3, "path": [[232, 332], [246, 360], [282, 378], [334, 380]], "spot": [284, 378], "labelAt": 0.8 },
+    { "name": "Wickerbrook Drive", "rank": 3, "path": [[456, 172], [478, 214], [484, 258], [468, 302]], "spot": [483, 238], "labelAt": 0.75 },
+    { "name": "Gristmill Way", "rank": 2, "path": [[386, 340], [424, 368], [468, 388], [506, 398]], "spot": [466, 387], "labelAt": 0.5 },
+    { "name": "Saltbox Road", "rank": 2, "path": [[432, 155], [500, 130], [580, 104], [664, 88]], "spot": [520, 124], "labelAt": 0.55 },
+    { "name": "Thimble Creek Road", "rank": 2, "path": [[794, 56], [746, 98], [692, 146], [646, 190], [602, 234], [574, 282], [562, 334], [568, 386], [580, 462]], "spot": [646, 190], "labelAt": 0.08 },
+    { "name": "Fallowmere Road", "rank": 3, "path": [[640, 26], [646, 110], [646, 190], [652, 300]], "labelAt": 0.25 },
+    { "name": "County Road 12", "rank": 1, "path": [[0, 470], [200, 462], [400, 470], [600, 462], [800, 454]], "spot": [640, 461], "labelAt": 0.06 },
+    { "name": "Kestrel Ridge Road", "rank": 3, "path": [[704, 318], [672, 398], [640, 461], [626, 520]], "labelAt": 0.2 },
+    { "name": "Marrow Hill Road", "rank": 3, "path": [[652, 260], [720, 242], [800, 214]], "labelAt": 0.62 },
+    { "name": "Larch Hollow Road", "rank": 3, "path": [[704, 318], [758, 352], [800, 372]], "labelAt": 0.5 },
+    { "name": "Bracken Shoal Road", "rank": 3, "path": [[30, 414], [112, 440], [200, 462]], "labelAt": 0.3 },
+    { "name": "Hollin Ferry Road", "rank": 3, "path": [[300, 402], [372, 436], [452, 470]], "labelAt": 0.35 }
+  ]
+}

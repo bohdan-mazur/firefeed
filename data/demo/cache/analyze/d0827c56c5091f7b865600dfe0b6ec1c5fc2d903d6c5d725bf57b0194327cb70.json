@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c034",
+  "created_at": "2026-11-21T15:34:41+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "not_incident",
+    "is_fire": false,
+    "location_as_heard": null,
+    "status": "none",
+    "summary": "Engine 1 reports it will flush hydrants along Ostler Street and remain available for calls.",
+    "units": [
+      "Engine 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0cc004613b0f6508016b01ba0e99b087d287d795adf90b7250",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1036,
+    "output_tokens": 107,
+    "reasoning_tokens": 38,
+    "requests": 1
+  }
+}

@@ -1,0 +1,128 @@
+.row {
+  display: grid;
+  grid-template-columns: 76px minmax(0, 1fr);
+  gap: var(--space-1) var(--space-4);
+  padding: var(--space-4) var(--space-3);
+  border-top: 1px solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  list-style: none;
+  transition: background var(--motion-base) var(--ease-out);
+}
+
+.highlight {
+  background: var(--color-accent-wash);
+}
+
+.meta {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+}
+
+.meta time {
+  font: 500 var(--text-sm) / 1.4 var(--font-mono);
+  color: var(--color-text);
+}
+
+.channel {
+  font: var(--text-xs) / 1.4 var(--font-mono);
+  color: var(--color-muted);
+}
+
+.body {
+  min-width: 0;
+}
+
+.text {
+  font: var(--text-lg) / 1.5 var(--font-serif);
+  overflow-wrap: anywhere;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--space-2);
+}
+
+.links {
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.ok {
+  color: var(--color-tone-cleared);
+}
+
+.diff {
+  color: var(--color-tone-control);
+}
+
+@media (max-width: 480px) {
+  .row {
+    grid-template-columns: 1fr;
+    padding-inline: 0;
+  }
+
+  .meta {
+    display: flex;
+    gap: var(--space-3);
+  }
+}
+
+/* Replay: a row arrives, its text is typed, then the model's reading lands chip by chip. */
+.typing .chips,
+.typing .links {
+  visibility: hidden;
+}
+
+.fresh {
+  animation: arrive var(--motion-slow) var(--ease-out);
+}
+
+.fresh .chips > * {
+  animation: land var(--motion-base) var(--ease-out) both;
+}
+
+.fresh .chips > :nth-child(2) {
+  animation-delay: 70ms;
+}
+
+.fresh .chips > :nth-child(3) {
+  animation-delay: 140ms;
+}
+
+.fresh .chips > :nth-child(4) {
+  animation-delay: 210ms;
+}
+
+.fresh .chips > :nth-child(5) {
+  animation-delay: 280ms;
+}
+
+.typing {
+  animation: arrive var(--motion-slow) var(--ease-out);
+  background: var(--color-surface);
+}
+
+@keyframes arrive {
+  from {
+    background: var(--color-accent-wash);
+    transform: translateY(-6px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes land {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

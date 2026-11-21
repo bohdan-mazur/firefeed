@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c036",
+  "created_at": "2026-11-21T15:34:45+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "mva_with_fire",
+    "is_fire": true,
+    "location_as_heard": "County Road 12",
+    "status": "on_scene",
+    "summary": "Engine 3 reports arriving at a two-vehicle crash with a sedan fire; everyone is out and one patient is walking around.",
+    "units": [
+      "Engine 3"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0b9b823076c04ba4016b01ba1216bc87d2a968f7313aab1aec",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1043,
+    "output_tokens": 113,
+    "reasoning_tokens": 32,
+    "requests": 1
+  }
+}

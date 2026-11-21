@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c003",
+  "created_at": "2026-11-21T15:33:42+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "not_incident",
+    "is_fire": false,
+    "location_as_heard": null,
+    "status": "none",
+    "summary": "Dispatch confirms Engine 3 is loud and clear.",
+    "units": [
+      "Engine 3"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_03cba92b19213837016b01b9d3cfc887d2b568349484441ab6",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1022,
+    "output_tokens": 97,
+    "reasoning_tokens": 37,
+    "requests": 1
+  }
+}

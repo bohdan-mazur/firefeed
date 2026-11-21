@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c023",
+  "created_at": "2026-11-21T15:34:17+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "vehicle_fire",
+    "is_fire": true,
+    "location_as_heard": "Gristmill Way",
+    "status": "cleared",
+    "summary": "Engine 2 is back in service and clear of the vehicle fire on Gristmill Way; the tow is on scene.",
+    "units": [
+      "Engine 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0816bbc6531e014e016b01b9f63e7887d2b8694fa045e84e3f",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1035,
+    "output_tokens": 100,
+    "reasoning_tokens": 22,
+    "requests": 1
+  }
+}

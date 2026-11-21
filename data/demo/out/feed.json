@@ -1,0 +1,1810 @@
+{
+  "format": 1,
+  "notice": "Demo on synthetic data. All calls, places and people are fictional.",
+  "dataset": {
+    "name": "Larkmoor County",
+    "synthetic": true,
+    "calls": 53,
+    "analyzed": 53,
+    "incidents": 13
+  },
+  "pipeline": {
+    "version": "2.0.0",
+    "analysis_model": "gpt-6-luna",
+    "reasoning_effort": "low",
+    "prompt_version": "2026-11-21.1",
+    "transcription_model": null
+  },
+  "usage": {
+    "api_requests": 53,
+    "input_tokens": 55454,
+    "cached_input_tokens": 0,
+    "output_tokens": 6565,
+    "reasoning_tokens": 2498,
+    "audio_seconds": 0.0,
+    "cost_usd": 0.008828,
+    "cost_per_call_usd": 0.0001666,
+    "recorded_from": "2026-11-21T15:32:22+00:00",
+    "recorded_to": "2026-11-21T15:35:19+00:00",
+    "prices": {
+      "input_per_million": 0.1,
+      "cached_input_per_million": 0.01,
+      "output_per_million": 0.5,
+      "transcription_per_minute": 0.0045,
+      "source": "https://developers.openai.com/api/docs/pricing",
+      "checked": "2026-11-21"
+    }
+  },
+  "channels": [
+    "Dispatch",
+    "Fireground 2",
+    "Fireground 3"
+  ],
+  "calls": [
+    {
+      "id": "c001",
+      "timestamp": "2026-10-17T12:58:00-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor County Fire Dispatch with the daily test of the fire alerting system. Time check, 12:58. Larkmoor clear.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Dispatch gives the daily fire alerting system test and time check.",
+        "units": []
+      },
+      "error": null,
+      "street": null,
+      "units": [],
+      "unknown_units": [],
+      "incident_id": null
+    },
+    {
+      "id": "c002",
+      "timestamp": "2026-10-17T13:01:40-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 3 to Larkmoor, radio check.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 1,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Engine 3 conducts a radio check with dispatch.",
+        "units": [
+          "Engine 3"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Engine 3"
+      ],
+      "unknown_units": [],
+      "incident_id": null
+    },
+    {
+      "id": "c003",
+      "timestamp": "2026-10-17T13:01:46-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 3, Larkmoor, you're loud and clear.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Dispatch confirms Engine 3 is loud and clear.",
+        "units": [
+          "Engine 3"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Engine 3"
+      ],
+      "unknown_units": [],
+      "incident_id": null
+    },
+    {
+      "id": "c004",
+      "timestamp": "2026-10-17T13:04:12-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 1, Ladder 1, Engine 3, Battalion 1. Respond to a reported structure fire, 1420 Bellwether Avenue, cross street Tinsmith Street. Caller states smoke is coming from a second-floor window and everyone is out of the house. Fireground 2 is assigned. Time out 13:04.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "1420 Bellwether Avenue, cross street Tinsmith Street",
+        "status": "dispatched",
+        "summary": "Engine 1, Ladder 1, Engine 3, and Battalion 1 are dispatched to a reported structure fire with smoke from a second-floor window.",
+        "units": [
+          "Engine 1",
+          "Ladder 1",
+          "Engine 3",
+          "Battalion 1"
+        ]
+      },
+      "error": null,
+      "street": "Bellwether Avenue",
+      "units": [
+        "Engine 1",
+        "Ladder 1",
+        "Engine 3",
+        "Battalion 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-01"
+    },
+    {
+      "id": "c005",
+      "timestamp": "2026-10-17T13:05:02-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Battalion 1 responding to the structure fire on Bellwether Avenue. I'll assume Bellwether Command on arrival.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "Bellwether Avenue",
+        "status": "en_route",
+        "summary": "Battalion 1 is responding to a structure fire on Bellwether Avenue and will assume Bellwether Command on arrival.",
+        "units": [
+          "Battalion 1"
+        ]
+      },
+      "error": null,
+      "street": "Bellwether Avenue",
+      "units": [
+        "Battalion 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-01"
+    },
+    {
+      "id": "c006",
+      "timestamp": "2026-10-17T13:08:47-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 1 is on scene, 1420 Bell weather. Two-story wood frame, smoke showing from the second floor, Delta side. Engine 1 is stretching a line and has command until Battalion 1 arrives.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "1420 Bellwether Avenue",
+        "status": "working",
+        "summary": "Engine 1 reports smoke showing from the second floor and is stretching a line while assuming command until Battalion 1 arrives.",
+        "units": [
+          "Engine 1",
+          "Battalion 1"
+        ]
+      },
+      "error": null,
+      "street": "Bellwether Avenue",
+      "units": [
+        "Engine 1",
+        "Battalion 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-01"
+    },
+    {
+      "id": "c007",
+      "timestamp": "2026-10-17T13:09:30-05:00",
+      "channel": "Fireground 2",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Command to Ladder 1, take the primary search on the second floor. Engine 3, catch the hydrant at Bellwether and Tinsmith and bring me a supply line.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.91,
+        "incident_type": "unknown",
+        "is_fire": true,
+        "location_as_heard": null,
+        "status": "working",
+        "summary": "Command assigns Ladder 1 to a primary search and Engine 3 to establish a hydrant supply line.",
+        "units": [
+          "Ladder 1",
+          "Engine 3"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Ladder 1",
+        "Engine 3"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-01"
+    },
+    {
+      "id": "c008",
+      "timestamp": "2026-10-17T13:10:15-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Bellwether Command to Larkmoor. Battalion 1 has command. We have a working fire in a second-floor bedroom. Add Engine 2 and Medic 2 to the assignment.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "Bellwether Command",
+        "status": "working",
+        "summary": "Battalion 1 takes command of a working second-floor bedroom fire and requests Engine 2 and Medic 2.",
+        "units": [
+          "Battalion 1",
+          "Engine 2",
+          "Medic 2"
+        ]
+      },
+      "error": null,
+      "street": "Bellwether Avenue",
+      "units": [
+        "Battalion 1",
+        "Engine 2",
+        "Medic 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-01"
+    },
+    {
+      "id": "c009",
+      "timestamp": "2026-10-17T13:13:58-05:00",
+      "channel": "Fireground 2",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Ladder 1 to Command, primary search on the second floor is complete. All clear, no victims.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.87,
+        "incident_type": "unknown",
+        "is_fire": true,
+        "location_as_heard": null,
+        "status": "working",
+        "summary": "Ladder 1 reports the primary search of the second floor is complete with no victims found.",
+        "units": [
+          "Ladder 1"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Ladder 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-01"
+    },
+    {
+      "id": "c010",
+      "timestamp": "2026-10-17T13:21:40-05:00",
+      "channel": "Fireground 2",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Command to all units on Fireground 2, the fire is knocked down. Ladder 1, open up the ceiling in that bedroom and check the attic for extension.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": null,
+        "status": "under_control",
+        "summary": "Command reports the fire knocked down and directs Ladder 1 to check the bedroom ceiling and attic for extension.",
+        "units": [
+          "Ladder 1"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Ladder 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-01"
+    },
+    {
+      "id": "c011",
+      "timestamp": "2026-10-17T13:22:05-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Bellwether Command to Larkmoor, you can show the fire under control at 13:21.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.94,
+        "incident_type": "unknown",
+        "is_fire": true,
+        "location_as_heard": "Bellwether Command",
+        "status": "under_control",
+        "summary": "Bellwether Command reports the fire under control at 13:21.",
+        "units": []
+      },
+      "error": null,
+      "street": "Bellwether Avenue",
+      "units": [],
+      "unknown_units": [],
+      "incident_id": "inc-01"
+    },
+    {
+      "id": "c012",
+      "timestamp": "2026-10-17T13:40:30-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to all fire units. The weather service has issued a red flag warning for Larkmoor County until 20:00 tonight. All outdoor burning permits are suspended until further notice.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Dispatch announces a red flag warning and suspension of outdoor burning permits.",
+        "units": []
+      },
+      "error": null,
+      "street": null,
+      "units": [],
+      "unknown_units": [],
+      "incident_id": null
+    },
+    {
+      "id": "c013",
+      "timestamp": "2026-10-17T14:05:30-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Bellwether Command to Larkmoor. Overhaul is complete at the house fire, 1420 Bellwether Avenue, and the fire marshal has the scene. Engine 1, Engine 3, Ladder 1, Engine 2 and Medic 2 are back in service. Terminate Bellwether Command.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "1420 Bellwether Avenue",
+        "status": "cleared",
+        "summary": "Overhaul is complete at the house fire, the fire marshal has the scene, and the listed units are back in service.",
+        "units": [
+          "Engine 1",
+          "Engine 3",
+          "Ladder 1",
+          "Engine 2",
+          "Medic 2"
+        ]
+      },
+      "error": null,
+      "street": "Bellwether Avenue",
+      "units": [
+        "Engine 1",
+        "Engine 3",
+        "Ladder 1",
+        "Engine 2",
+        "Medic 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-01"
+    },
+    {
+      "id": "c014",
+      "timestamp": "2026-10-17T14:12:40-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 2, respond for a vehicle fire in the parking lot at 300 Gristmill Way. Caller reports a pickup truck with flames coming from the engine compartment, nobody inside. Time out 14:12.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "vehicle_fire",
+        "is_fire": true,
+        "location_as_heard": "300 Gristmill Way",
+        "status": "dispatched",
+        "summary": "Engine 2 is dispatched to a pickup truck fire in the parking lot at 300 Gristmill Way.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Gristmill Way",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-02"
+    },
+    {
+      "id": "c015",
+      "timestamp": "2026-10-17T14:15:30-05:00",
+      "channel": "Fireground 3",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Brush 4 to Larkmoor, radio check on Fireground 3.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Brush 4 conducts a radio check with the dispatcher on Fireground 3.",
+        "units": [
+          "Brush 4"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Brush 4"
+      ],
+      "unknown_units": [],
+      "incident_id": null
+    },
+    {
+      "id": "c016",
+      "timestamp": "2026-10-17T14:15:36-05:00",
+      "channel": "Fireground 3",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Brush 4, Larkmoor, loud and clear on Fireground 3.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Brush 4 reports a clear radio signal on Fireground 3.",
+        "units": [
+          "Brush 4"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Brush 4"
+      ],
+      "unknown_units": [],
+      "incident_id": null
+    },
+    {
+      "id": "c017",
+      "timestamp": "2026-10-17T14:18:05-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 2 is 10-97 at Gristmill Way. One pickup with heavy fire in the engine compartment, no exposures. Engine 2 will handle.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "vehicle_fire",
+        "is_fire": true,
+        "location_as_heard": "Gristmill Way",
+        "status": "on_scene",
+        "summary": "Engine 2 arrived at Gristmill Way and reported a pickup with heavy fire in the engine compartment and no exposures.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Gristmill Way",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-02"
+    },
+    {
+      "id": "c018",
+      "timestamp": "2026-10-17T14:24:40-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 2 to Larkmoor, the vehicle fire is knocked down. We'll be on scene about twenty minutes for cleanup. Can you start a tow truck to Gristmill Way?",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.98,
+        "incident_type": "vehicle_fire",
+        "is_fire": true,
+        "location_as_heard": "Gristmill Way",
+        "status": "under_control",
+        "summary": "Engine 2 reports the vehicle fire is knocked down and requests a tow truck to Gristmill Way.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Gristmill Way",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-02"
+    },
+    {
+      "id": "c019",
+      "timestamp": "2026-10-17T14:26:30-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Brush 4, Tanker 4, Engine 3. Respond to a grass fire, Thimble Creek Road at Fallowmere Road. Caller reports a field on fire spreading toward the tree line. Fireground 3 is assigned. Time out 14:26.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "wildland_fire",
+        "is_fire": true,
+        "location_as_heard": "Thimble Creek Road at Fallowmere Road",
+        "status": "dispatched",
+        "summary": "Brush 4, Tanker 4, and Engine 3 are dispatched to a field fire spreading toward the tree line.",
+        "units": [
+          "Brush 4",
+          "Tanker 4",
+          "Engine 3"
+        ]
+      },
+      "error": null,
+      "street": "Thimble Creek Road",
+      "units": [
+        "Brush 4",
+        "Tanker 4",
+        "Engine 3"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-03"
+    },
+    {
+      "id": "c020",
+      "timestamp": "2026-10-17T14:35:10-05:00",
+      "channel": "Fireground 3",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Brush 4 on scene. We've got about two acres of grass burning, moving east with the wind toward the tree line. No structures threatened at this time. Tanker 4, set up your dump tank at the road.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "wildland_fire",
+        "is_fire": true,
+        "location_as_heard": null,
+        "status": "working",
+        "summary": "Brush 4 reports a two-acre grass fire moving toward the tree line, and Tanker 4 is directed to set up a dump tank.",
+        "units": [
+          "Brush 4",
+          "Tanker 4"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Brush 4",
+        "Tanker 4"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-03"
+    },
+    {
+      "id": "c021",
+      "timestamp": "2026-10-17T14:37:45-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Brush 4 to Larkmoor. The grass fire on Thimble Crick Road is picking up with the wind. Start Engine 1 to us for water supply.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "wildland_fire",
+        "is_fire": true,
+        "location_as_heard": "Thimble Creek Road",
+        "status": "working",
+        "summary": "Brush 4 reports the grass fire is growing in the wind and requests Engine 1 for water supply.",
+        "units": [
+          "Brush 4",
+          "Engine 1"
+        ]
+      },
+      "error": null,
+      "street": "Thimble Creek Road",
+      "units": [
+        "Brush 4",
+        "Engine 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-03"
+    },
+    {
+      "id": "c022",
+      "timestamp": "2026-10-17T14:41:15-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Medic 2, respond for a medical emergency, 66 Copperwick Lane. Seventy-eight-year-old male with difficulty breathing, conscious and alert. Time out 14:41.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "medical",
+        "is_fire": false,
+        "location_as_heard": "66 Copperwick Lane",
+        "status": "dispatched",
+        "summary": "Medic 2 is dispatched to a 78-year-old man with difficulty breathing at 66 Copperwick Lane.",
+        "units": [
+          "Medic 2"
+        ]
+      },
+      "error": null,
+      "street": "Copperwick Lane",
+      "units": [
+        "Medic 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-04"
+    },
+    {
+      "id": "c023",
+      "timestamp": "2026-10-17T14:49:10-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 2 is 10-8, clear of the vehicle fire on Gristmill Way. The tow is on scene.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "vehicle_fire",
+        "is_fire": true,
+        "location_as_heard": "Gristmill Way",
+        "status": "cleared",
+        "summary": "Engine 2 is back in service and clear of the vehicle fire on Gristmill Way; the tow is on scene.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Gristmill Way",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-02"
+    },
+    {
+      "id": "c024",
+      "timestamp": "2026-10-17T14:58:20-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 2, respond for an odor of natural gas inside a residence, 812 Ferrier Street. The family is outside waiting. Time out 14:58.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "gas_leak",
+        "is_fire": false,
+        "location_as_heard": "812 Ferrier Street",
+        "status": "dispatched",
+        "summary": "Engine 2 is dispatched to a residence on Ferrier Street for an odor of natural gas.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Ferrier Street",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-05"
+    },
+    {
+      "id": "c025",
+      "timestamp": "2026-10-17T15:00:10-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Battalion 1 to Larkmoor. I'll be at the county emergency operations center for the red flag briefing. Reach me by phone if you need me.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Battalion 1 reports going to the county emergency operations center for a red flag briefing.",
+        "units": [
+          "Battalion 1"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Battalion 1"
+      ],
+      "unknown_units": [],
+      "incident_id": null
+    },
+    {
+      "id": "c026",
+      "timestamp": "2026-10-17T15:04:50-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 2 on scene, 812 Ferrier. Two-story residential, nothing showing. We'll be investigating with the gas meter.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.83,
+        "incident_type": "unknown",
+        "is_fire": false,
+        "location_as_heard": "812 Ferrier",
+        "status": "on_scene",
+        "summary": "Engine 2 arrived at 812 Ferrier and will investigate the two-story residence with a gas meter.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Ferrier Street",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-05"
+    },
+    {
+      "id": "c027",
+      "timestamp": "2026-10-17T15:06:20-05:00",
+      "channel": "Fireground 3",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Brush 4 to all units on Fireground 3. Forward progress is stopped, the fire is contained at about three acres. Start mopping up the edges.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.98,
+        "incident_type": "wildland_fire",
+        "is_fire": true,
+        "location_as_heard": null,
+        "status": "under_control",
+        "summary": "Brush 4 reports the fire contained at about three acres and directs crews to mop up the edges.",
+        "units": [
+          "Brush 4"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Brush 4"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-03"
+    },
+    {
+      "id": "c028",
+      "timestamp": "2026-10-17T15:09:30-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 2 to Larkmoor. We have high readings by the gas meter in the basement on Ferrier Street. We've shut the gas off at the meter and we're ventilating. Request the gas utility to respond.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "gas_leak",
+        "is_fire": false,
+        "location_as_heard": "Ferrier Street",
+        "status": "working",
+        "summary": "Engine 2 reports high gas readings in a basement, has shut off the gas and is ventilating, and requests the gas utility.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Ferrier Street",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-05"
+    },
+    {
+      "id": "c029",
+      "timestamp": "2026-10-17T15:15:05-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Ladder 1, respond to a fire alarm, Wickerbrook Apartments, 55 Wickerbrook Drive, building 2. The alarm company reports a general alarm, no callers reporting smoke. Time out 15:15.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "fire_alarm",
+        "is_fire": true,
+        "location_as_heard": "55 Wickerbrook Drive, building 2",
+        "status": "dispatched",
+        "summary": "Ladder 1 is dispatched to a general fire alarm at Wickerbrook Apartments, 55 Wickerbrook Drive, building 2.",
+        "units": [
+          "Ladder 1"
+        ]
+      },
+      "error": null,
+      "street": "Wickerbrook Drive",
+      "units": [
+        "Ladder 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-06"
+    },
+    {
+      "id": "c030",
+      "timestamp": "2026-10-17T15:20:30-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Ladder 1 on scene, 55 Wickerbrook Drive. Three-story apartment building, nothing showing. We'll be investigating the alarm.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.98,
+        "incident_type": "fire_alarm",
+        "is_fire": true,
+        "location_as_heard": "55 Wickerbrook Drive",
+        "status": "on_scene",
+        "summary": "Ladder 1 arrived at a three-story apartment building with nothing showing and is investigating the alarm.",
+        "units": [
+          "Ladder 1"
+        ]
+      },
+      "error": null,
+      "street": "Wickerbrook Drive",
+      "units": [
+        "Ladder 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-06"
+    },
+    {
+      "id": "c031",
+      "timestamp": "2026-10-17T15:27:15-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Ladder 1 to Larkmoor. It's burnt food in apartment 2C, no fire. We're ventilating the hallway and resetting the alarm panel. Show it as a false alarm.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.91,
+        "incident_type": "fire_alarm",
+        "is_fire": true,
+        "location_as_heard": "apartment 2C",
+        "status": "cancelled",
+        "summary": "Ladder 1 found burnt food with no fire, ventilated the hallway, reset the alarm panel, and reported a false alarm.",
+        "units": [
+          "Ladder 1"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Ladder 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-06"
+    },
+    {
+      "id": "c032",
+      "timestamp": "2026-10-17T15:41:10-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 2 to Larkmoor. The gas utility is on scene at Ferrier Street and has the leak secured. Engine 2 is back in service.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.98,
+        "incident_type": "gas_leak",
+        "is_fire": false,
+        "location_as_heard": "Ferrier Street",
+        "status": "cleared",
+        "summary": "Engine 2 reports the gas utility secured the leak at Ferrier Street and returns to service.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Ferrier Street",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-05"
+    },
+    {
+      "id": "c033",
+      "timestamp": "2026-10-17T15:44:00-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Brush 4 to Larkmoor. Brush 4, Tanker 4, Engine 3 and Engine 1 are clear of the Thimble Creek grass fire and returning to quarters.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "wildland_fire",
+        "is_fire": true,
+        "location_as_heard": "Thimble Creek",
+        "status": "cleared",
+        "summary": "Brush 4, Tanker 4, Engine 3, and Engine 1 are clear of the Thimble Creek grass fire and returning to quarters.",
+        "units": [
+          "Brush 4",
+          "Tanker 4",
+          "Engine 3",
+          "Engine 1"
+        ]
+      },
+      "error": null,
+      "street": "Thimble Creek Road",
+      "units": [
+        "Brush 4",
+        "Tanker 4",
+        "Engine 3",
+        "Engine 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-03"
+    },
+    {
+      "id": "c034",
+      "timestamp": "2026-10-17T15:50:30-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 1 to Larkmoor. We'll be flushing hydrants along Ostler Street for the next hour. We're available for calls.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Engine 1 reports it will flush hydrants along Ostler Street and remain available for calls.",
+        "units": [
+          "Engine 1"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Engine 1"
+      ],
+      "unknown_units": [],
+      "incident_id": null
+    },
+    {
+      "id": "c035",
+      "timestamp": "2026-10-17T16:03:40-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 3, Medic 2, Battalion 1. Respond to a two-vehicle crash with one vehicle on fire, County Road 12 at Kestrel Ridge Road. Caller reports one person injured, everyone is out of the vehicles. Time out 16:03.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "mva_with_fire",
+        "is_fire": true,
+        "location_as_heard": "County Road 12 at Kestrel Ridge Road",
+        "status": "dispatched",
+        "summary": "Engine 3, Medic 2, and Battalion 1 are dispatched to a two-vehicle crash with one vehicle on fire.",
+        "units": [
+          "Engine 3",
+          "Medic 2",
+          "Battalion 1"
+        ]
+      },
+      "error": null,
+      "street": "County Road 12",
+      "units": [
+        "Engine 3",
+        "Medic 2",
+        "Battalion 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-07"
+    },
+    {
+      "id": "c036",
+      "timestamp": "2026-10-17T16:12:20-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 3 on scene, County Road 12. Two-vehicle crash, one sedan with fire in the engine compartment. Everyone is out, one patient walking around.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "mva_with_fire",
+        "is_fire": true,
+        "location_as_heard": "County Road 12",
+        "status": "on_scene",
+        "summary": "Engine 3 reports arriving at a two-vehicle crash with a sedan fire; everyone is out and one patient is walking around.",
+        "units": [
+          "Engine 3"
+        ]
+      },
+      "error": null,
+      "street": "County Road 12",
+      "units": [
+        "Engine 3"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-07"
+    },
+    {
+      "id": "c037",
+      "timestamp": "2026-10-17T16:15:05-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 3 to Larkmoor. The fire in the crashed sedan is knocked down. Medic 2 is transporting one patient with minor injuries to Larkmoor General.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "mva_with_fire",
+        "is_fire": true,
+        "location_as_heard": null,
+        "status": "under_control",
+        "summary": "Engine 3 reports the fire in a crashed sedan is knocked down, and Medic 2 is transporting one patient with minor injuries.",
+        "units": [
+          "Engine 3",
+          "Medic 2"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Engine 3",
+        "Medic 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-07"
+    },
+    {
+      "id": "c038",
+      "timestamp": "2026-10-17T16:20:00-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 2 to Larkmoor. We'll be at the county fuel depot on Saltbox Road to refuel. Available on the radio.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Engine 2 reports stopping at the county fuel depot to refuel and remaining available by radio.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": null
+    },
+    {
+      "id": "c039",
+      "timestamp": "2026-10-17T16:31:15-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 1, Engine 2, Ladder 1. Respond to a structure fire, 27 Lanternfield Drive. Caller reports a fire on the stove that has spread to the cabinets, occupants are out. Fireground 2 is assigned. Time out 16:31.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "27 Lanternfield Drive",
+        "status": "dispatched",
+        "summary": "Engine 1, Engine 2, and Ladder 1 are dispatched to a stove fire that spread to the cabinets at 27 Lanternfield Drive.",
+        "units": [
+          "Engine 1",
+          "Engine 2",
+          "Ladder 1"
+        ]
+      },
+      "error": null,
+      "street": "Lanternfield Drive",
+      "units": [
+        "Engine 1",
+        "Engine 2",
+        "Ladder 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-08"
+    },
+    {
+      "id": "c040",
+      "timestamp": "2026-10-17T16:36:40-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 1 on scene, 27 Lantern Field. Single-story ranch, light smoke from the front door. Engine 1 is going in with a line and has Lanternfield Command.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.98,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "27 Lanternfield",
+        "status": "working",
+        "summary": "Engine 1 reports light smoke at a single-story ranch, enters with a hose line, and establishes Lanternfield Command.",
+        "units": [
+          "Engine 1"
+        ]
+      },
+      "error": null,
+      "street": "Lanternfield Drive",
+      "units": [
+        "Engine 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-08"
+    },
+    {
+      "id": "c041",
+      "timestamp": "2026-10-17T16:38:20-05:00",
+      "channel": "Fireground 2",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Lanternfield Command to Ladder 1, set up a fan at the front door for positive pressure. We need to clear the smoke out of the kitchen.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.86,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "Lanternfield Command",
+        "status": "working",
+        "summary": "Ladder 1 is directed to ventilate the kitchen and clear smoke from the building.",
+        "units": [
+          "Ladder 1"
+        ]
+      },
+      "error": null,
+      "street": "Lanternfield Drive",
+      "units": [
+        "Ladder 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-08"
+    },
+    {
+      "id": "c042",
+      "timestamp": "2026-10-17T16:38:50-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 3 and Battalion 1 are clear of the crash and vehicle fire on County Road 12. The roadway is back open.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "mva_with_fire",
+        "is_fire": true,
+        "location_as_heard": "County Road 12",
+        "status": "cleared",
+        "summary": "Engine 3 and Battalion 1 clear the crash and vehicle fire on County Road 12, and the roadway is back open.",
+        "units": [
+          "Engine 3",
+          "Battalion 1"
+        ]
+      },
+      "error": null,
+      "street": "County Road 12",
+      "units": [
+        "Engine 3",
+        "Battalion 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-07"
+    },
+    {
+      "id": "c043",
+      "timestamp": "2026-10-17T16:41:05-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Lanternfield Command to Larkmoor. The kitchen fire is knocked down, it was contained to the stove and cabinets. Engine 2 can return to quarters, Ladder 1 will stay to ventilate.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "Lanternfield Command",
+        "status": "under_control",
+        "summary": "The kitchen fire is knocked down; Engine 2 may return while Ladder 1 stays to ventilate.",
+        "units": [
+          "Engine 2",
+          "Ladder 1"
+        ]
+      },
+      "error": null,
+      "street": "Lanternfield Drive",
+      "units": [
+        "Engine 2",
+        "Ladder 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-08"
+    },
+    {
+      "id": "c044",
+      "timestamp": "2026-10-17T16:50:20-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 3, respond for a public assist, 15 Ostler Street. Elderly resident needs help with a smoke detector that keeps chirping for a low battery. No smoke, no fire. Time out 16:50.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.98,
+        "incident_type": "other_incident",
+        "is_fire": false,
+        "location_as_heard": "15 Ostler Street",
+        "status": "dispatched",
+        "summary": "Engine 3 is dispatched to help an elderly resident with a chirping low-battery smoke detector; no smoke or fire is reported.",
+        "units": [
+          "Engine 3"
+        ]
+      },
+      "error": null,
+      "street": "Ostler Street",
+      "units": [
+        "Engine 3"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-09"
+    },
+    {
+      "id": "c045",
+      "timestamp": "2026-10-17T17:02:30-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 1 to Larkmoor. Engine 1 and Ladder 1 are clear of the kitchen fire on Lanternfield Drive. The scene is turned over to the homeowner.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "structure_fire",
+        "is_fire": true,
+        "location_as_heard": "Lanternfield Drive",
+        "status": "cleared",
+        "summary": "Engine 1 and Ladder 1 are clear of the kitchen fire and have turned the scene over to the homeowner.",
+        "units": [
+          "Engine 1",
+          "Ladder 1"
+        ]
+      },
+      "error": null,
+      "street": "Lanternfield Drive",
+      "units": [
+        "Engine 1",
+        "Ladder 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-08"
+    },
+    {
+      "id": "c046",
+      "timestamp": "2026-10-17T17:08:45-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 2, respond for a smoke investigation, area of 640 Saltbox Road. A passerby reports heavy smoke behind the restaurant. Time out 17:08.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.98,
+        "incident_type": "smoke_investigation",
+        "is_fire": true,
+        "location_as_heard": "640 Saltbox Road",
+        "status": "dispatched",
+        "summary": "Engine 2 is dispatched to investigate heavy smoke reported behind a restaurant at 640 Saltbox Road.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Saltbox Road",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-10"
+    },
+    {
+      "id": "c047",
+      "timestamp": "2026-10-17T17:14:30-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 2 to Larkmoor. It's a commercial barbecue smoker behind the restaurant on Saltbox Road, operating normally. No fire, no action needed. Engine 2 is back in service.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.67,
+        "incident_type": "smoke_investigation",
+        "is_fire": true,
+        "location_as_heard": "Saltbox Road",
+        "status": "cancelled",
+        "summary": "Engine 2 found a commercial barbecue smoker operating normally behind a restaurant, with no fire or action needed.",
+        "units": [
+          "Engine 2"
+        ]
+      },
+      "error": null,
+      "street": "Saltbox Road",
+      "units": [
+        "Engine 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-10"
+    },
+    {
+      "id": "c048",
+      "timestamp": "2026-10-17T17:18:00-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 3, fire alarm activation, Quillon Avenue Self Storage, 400 Quillon Avenue. Zone 4 smoke detector. The keyholder is en route. Time out 17:18.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "fire_alarm",
+        "is_fire": true,
+        "location_as_heard": "Quillon Avenue Self Storage, 400 Quillon Avenue",
+        "status": "dispatched",
+        "summary": "Engine 3 is dispatched to a smoke detector fire alarm at Quillon Avenue Self Storage.",
+        "units": [
+          "Engine 3"
+        ]
+      },
+      "error": null,
+      "street": "Quillon Avenue",
+      "units": [
+        "Engine 3"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-11"
+    },
+    {
+      "id": "c049",
+      "timestamp": "2026-10-17T17:20:35-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 3. The alarm company reports technicians are testing the system at 400 Quillon Avenue. You can disregard and return to quarters.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.97,
+        "incident_type": "fire_alarm",
+        "is_fire": true,
+        "location_as_heard": "400 Quillon Avenue",
+        "status": "cancelled",
+        "summary": "Engine 3 is told to disregard the alarm at 400 Quillon Avenue and return to quarters because technicians are testing the system.",
+        "units": [
+          "Engine 3"
+        ]
+      },
+      "error": null,
+      "street": "Quillon Avenue",
+      "units": [
+        "Engine 3"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-11"
+    },
+    {
+      "id": "c050",
+      "timestamp": "2026-10-17T17:25:10-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Engine 1, respond for a dumpster fire behind 210 Ashcomb Street. Caller reports flames showing, close to the back wall of the building. Time out 17:25.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "other_fire",
+        "is_fire": true,
+        "location_as_heard": "210 Ashcomb Street",
+        "status": "dispatched",
+        "summary": "Engine 1 is dispatched to a dumpster fire behind 210 Ashcomb Street, with flames near a building’s back wall.",
+        "units": [
+          "Engine 1"
+        ]
+      },
+      "error": null,
+      "street": "Ashcomb Street",
+      "units": [
+        "Engine 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-12"
+    },
+    {
+      "id": "c051",
+      "timestamp": "2026-10-17T17:31:40-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Engine 1 to Larkmoor, the dumpster fire on Ashcomb is knocked down. No extension to the building. We'll be clear in about ten minutes.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "other_fire",
+        "is_fire": true,
+        "location_as_heard": "Ashcomb Street",
+        "status": "under_control",
+        "summary": "Engine 1 reports the dumpster fire on Ashcomb Street is knocked down with no extension to the building.",
+        "units": [
+          "Engine 1"
+        ]
+      },
+      "error": null,
+      "street": "Ashcomb Street",
+      "units": [
+        "Engine 1"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-12"
+    },
+    {
+      "id": "c052",
+      "timestamp": "2026-10-17T17:40:20-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Larkmoor to Medic 2, respond for a fall, Larkmoor Senior Center, 90 Quarrystone Drive. Eighty-four-year-old female with a possible hip injury, conscious and breathing. Time out 17:40.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "medical",
+        "is_fire": false,
+        "location_as_heard": "90 Quarrystone Drive",
+        "status": "dispatched",
+        "summary": "Medic 2 is dispatched to Larkmoor Senior Center for an 84-year-old woman who fell and may have a hip injury.",
+        "units": [
+          "Medic 2"
+        ]
+      },
+      "error": null,
+      "street": "Quarrystone Drive",
+      "units": [
+        "Medic 2"
+      ],
+      "unknown_units": [],
+      "incident_id": "inc-13"
+    },
+    {
+      "id": "c053",
+      "timestamp": "2026-10-17T17:45:00-05:00",
+      "channel": "Dispatch",
+      "duration_s": null,
+      "audio": null,
+      "transcript": "Battalion 1 to all fire units. Tonight's live-fire training at the Station 1 training tower is cancelled because of the red flag warning. We'll reschedule next week.",
+      "transcript_source": "text",
+      "analysis": {
+        "confidence": 0.99,
+        "incident_type": "not_incident",
+        "is_fire": false,
+        "location_as_heard": null,
+        "status": "none",
+        "summary": "Battalion 1 announces that tonight’s live-fire training at the Station 1 training tower is cancelled and will be rescheduled.",
+        "units": [
+          "Battalion 1"
+        ]
+      },
+      "error": null,
+      "street": null,
+      "units": [
+        "Battalion 1"
+      ],
+      "unknown_units": [],
+      "incident_id": null
+    }
+  ],
+  "incidents": [
+    {
+      "id": "inc-01",
+      "call_ids": [
+        "c004",
+        "c005",
+        "c006",
+        "c007",
+        "c008",
+        "c009",
+        "c010",
+        "c011",
+        "c013"
+      ],
+      "start": "2026-10-17T13:04:12-05:00",
+      "end": "2026-10-17T14:05:30-05:00",
+      "channels": [
+        "Dispatch",
+        "Fireground 2"
+      ],
+      "incident_type": "structure_fire",
+      "is_fire": true,
+      "street": "Bellwether Avenue",
+      "units": [
+        "Engine 1",
+        "Ladder 1",
+        "Engine 3",
+        "Battalion 1",
+        "Engine 2",
+        "Medic 2"
+      ],
+      "status": "cleared",
+      "summary": "Engine 1, Ladder 1, Engine 3, and Battalion 1 are dispatched to a reported structure fire with smoke from a second-floor window."
+    },
+    {
+      "id": "inc-02",
+      "call_ids": [
+        "c014",
+        "c017",
+        "c018",
+        "c023"
+      ],
+      "start": "2026-10-17T14:12:40-05:00",
+      "end": "2026-10-17T14:49:10-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "vehicle_fire",
+      "is_fire": true,
+      "street": "Gristmill Way",
+      "units": [
+        "Engine 2"
+      ],
+      "status": "cleared",
+      "summary": "Engine 2 is dispatched to a pickup truck fire in the parking lot at 300 Gristmill Way."
+    },
+    {
+      "id": "inc-03",
+      "call_ids": [
+        "c019",
+        "c020",
+        "c021",
+        "c027",
+        "c033"
+      ],
+      "start": "2026-10-17T14:26:30-05:00",
+      "end": "2026-10-17T15:44:00-05:00",
+      "channels": [
+        "Dispatch",
+        "Fireground 3"
+      ],
+      "incident_type": "wildland_fire",
+      "is_fire": true,
+      "street": "Thimble Creek Road",
+      "units": [
+        "Brush 4",
+        "Tanker 4",
+        "Engine 3",
+        "Engine 1"
+      ],
+      "status": "cleared",
+      "summary": "Brush 4, Tanker 4, and Engine 3 are dispatched to a field fire spreading toward the tree line."
+    },
+    {
+      "id": "inc-04",
+      "call_ids": [
+        "c022"
+      ],
+      "start": "2026-10-17T14:41:15-05:00",
+      "end": "2026-10-17T14:41:15-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "medical",
+      "is_fire": false,
+      "street": "Copperwick Lane",
+      "units": [
+        "Medic 2"
+      ],
+      "status": "dispatched",
+      "summary": "Medic 2 is dispatched to a 78-year-old man with difficulty breathing at 66 Copperwick Lane."
+    },
+    {
+      "id": "inc-05",
+      "call_ids": [
+        "c024",
+        "c026",
+        "c028",
+        "c032"
+      ],
+      "start": "2026-10-17T14:58:20-05:00",
+      "end": "2026-10-17T15:41:10-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "gas_leak",
+      "is_fire": false,
+      "street": "Ferrier Street",
+      "units": [
+        "Engine 2"
+      ],
+      "status": "cleared",
+      "summary": "Engine 2 is dispatched to a residence on Ferrier Street for an odor of natural gas."
+    },
+    {
+      "id": "inc-06",
+      "call_ids": [
+        "c029",
+        "c030",
+        "c031"
+      ],
+      "start": "2026-10-17T15:15:05-05:00",
+      "end": "2026-10-17T15:27:15-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "fire_alarm",
+      "is_fire": true,
+      "street": "Wickerbrook Drive",
+      "units": [
+        "Ladder 1"
+      ],
+      "status": "cancelled",
+      "summary": "Ladder 1 is dispatched to a general fire alarm at Wickerbrook Apartments, 55 Wickerbrook Drive, building 2."
+    },
+    {
+      "id": "inc-07",
+      "call_ids": [
+        "c035",
+        "c036",
+        "c037",
+        "c042"
+      ],
+      "start": "2026-10-17T16:03:40-05:00",
+      "end": "2026-10-17T16:38:50-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "mva_with_fire",
+      "is_fire": true,
+      "street": "County Road 12",
+      "units": [
+        "Engine 3",
+        "Medic 2",
+        "Battalion 1"
+      ],
+      "status": "cleared",
+      "summary": "Engine 3, Medic 2, and Battalion 1 are dispatched to a two-vehicle crash with one vehicle on fire."
+    },
+    {
+      "id": "inc-08",
+      "call_ids": [
+        "c039",
+        "c040",
+        "c041",
+        "c043",
+        "c045"
+      ],
+      "start": "2026-10-17T16:31:15-05:00",
+      "end": "2026-10-17T17:02:30-05:00",
+      "channels": [
+        "Dispatch",
+        "Fireground 2"
+      ],
+      "incident_type": "structure_fire",
+      "is_fire": true,
+      "street": "Lanternfield Drive",
+      "units": [
+        "Engine 1",
+        "Engine 2",
+        "Ladder 1"
+      ],
+      "status": "cleared",
+      "summary": "Engine 1, Engine 2, and Ladder 1 are dispatched to a stove fire that spread to the cabinets at 27 Lanternfield Drive."
+    },
+    {
+      "id": "inc-09",
+      "call_ids": [
+        "c044"
+      ],
+      "start": "2026-10-17T16:50:20-05:00",
+      "end": "2026-10-17T16:50:20-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "other_incident",
+      "is_fire": false,
+      "street": "Ostler Street",
+      "units": [
+        "Engine 3"
+      ],
+      "status": "dispatched",
+      "summary": "Engine 3 is dispatched to help an elderly resident with a chirping low-battery smoke detector; no smoke or fire is reported."
+    },
+    {
+      "id": "inc-10",
+      "call_ids": [
+        "c046",
+        "c047"
+      ],
+      "start": "2026-10-17T17:08:45-05:00",
+      "end": "2026-10-17T17:14:30-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "smoke_investigation",
+      "is_fire": true,
+      "street": "Saltbox Road",
+      "units": [
+        "Engine 2"
+      ],
+      "status": "cancelled",
+      "summary": "Engine 2 is dispatched to investigate heavy smoke reported behind a restaurant at 640 Saltbox Road."
+    },
+    {
+      "id": "inc-11",
+      "call_ids": [
+        "c048",
+        "c049"
+      ],
+      "start": "2026-10-17T17:18:00-05:00",
+      "end": "2026-10-17T17:20:35-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "fire_alarm",
+      "is_fire": true,
+      "street": "Quillon Avenue",
+      "units": [
+        "Engine 3"
+      ],
+      "status": "cancelled",
+      "summary": "Engine 3 is dispatched to a smoke detector fire alarm at Quillon Avenue Self Storage."
+    },
+    {
+      "id": "inc-12",
+      "call_ids": [
+        "c050",
+        "c051"
+      ],
+      "start": "2026-10-17T17:25:10-05:00",
+      "end": "2026-10-17T17:31:40-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "other_fire",
+      "is_fire": true,
+      "street": "Ashcomb Street",
+      "units": [
+        "Engine 1"
+      ],
+      "status": "under_control",
+      "summary": "Engine 1 is dispatched to a dumpster fire behind 210 Ashcomb Street, with flames near a building’s back wall."
+    },
+    {
+      "id": "inc-13",
+      "call_ids": [
+        "c052"
+      ],
+      "start": "2026-10-17T17:40:20-05:00",
+      "end": "2026-10-17T17:40:20-05:00",
+      "channels": [
+        "Dispatch"
+      ],
+      "incident_type": "medical",
+      "is_fire": false,
+      "street": "Quarrystone Drive",
+      "units": [
+        "Medic 2"
+      ],
+      "status": "dispatched",
+      "summary": "Medic 2 is dispatched to Larkmoor Senior Center for an 84-year-old woman who fell and may have a hip injury."
+    }
+  ]
+}

@@ -1,0 +1,1793 @@
+{
+  "format": 1,
+  "notice": "Demo on synthetic data. All calls, places and people are fictional.",
+  "analysis_model": "gpt-6-luna",
+  "prompt_version": "2026-11-21.1",
+  "recorded_from": "2026-11-21T15:32:22+00:00",
+  "calls_compared": 53,
+  "calls_fully_correct": 47,
+  "not_analyzed": [],
+  "missing_in_feed": [],
+  "missing_in_spec": [],
+  "fields": {
+    "is_fire": {
+      "correct": 53,
+      "total": 53,
+      "accuracy": 1.0
+    },
+    "incident_type": {
+      "correct": 50,
+      "total": 53,
+      "accuracy": 0.9434
+    },
+    "street": {
+      "correct": 52,
+      "total": 53,
+      "accuracy": 0.9811
+    },
+    "units": {
+      "correct": 53,
+      "total": 53,
+      "accuracy": 1.0
+    },
+    "status": {
+      "correct": 50,
+      "total": 53,
+      "accuracy": 0.9434
+    }
+  },
+  "is_fire": {
+    "tp": 36,
+    "fp": 0,
+    "fn": 0,
+    "tn": 17,
+    "precision": 1.0,
+    "recall": 1.0
+  },
+  "grouping": {
+    "incidents_expected": 13,
+    "incidents_predicted": 13,
+    "incidents_exact": 13,
+    "pair_precision": 1.0,
+    "pair_recall": 1.0,
+    "mismatches": []
+  },
+  "calls": [
+    {
+      "id": "c001",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    },
+    {
+      "id": "c002",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Engine 3"
+        ],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Engine 3"
+        ],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    },
+    {
+      "id": "c003",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Engine 3"
+        ],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Engine 3"
+        ],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    },
+    {
+      "id": "c004",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Battalion 1",
+          "Engine 1",
+          "Engine 3",
+          "Ladder 1"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Battalion 1",
+          "Engine 1",
+          "Engine 3",
+          "Ladder 1"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "1420 Bellwether Avenue, cross street Tinsmith Street",
+      "expected_incident": "i01",
+      "predicted_incident": "inc-01"
+    },
+    {
+      "id": "c005",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Battalion 1"
+        ],
+        "status": "en_route"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Battalion 1"
+        ],
+        "status": "en_route"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Bellwether Avenue",
+      "expected_incident": "i01",
+      "predicted_incident": "inc-01"
+    },
+    {
+      "id": "c006",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Battalion 1",
+          "Engine 1"
+        ],
+        "status": "on_scene"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Battalion 1",
+          "Engine 1"
+        ],
+        "status": "working"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": false
+      },
+      "all_match": false,
+      "location_as_heard": "1420 Bellwether Avenue",
+      "expected_incident": "i01",
+      "predicted_incident": "inc-01"
+    },
+    {
+      "id": "c007",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Engine 3",
+          "Ladder 1"
+        ],
+        "status": "working"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "unknown",
+        "street": null,
+        "units": [
+          "Engine 3",
+          "Ladder 1"
+        ],
+        "status": "working"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": false,
+        "street": false,
+        "units": true,
+        "status": true
+      },
+      "all_match": false,
+      "location_as_heard": null,
+      "expected_incident": "i01",
+      "predicted_incident": "inc-01"
+    },
+    {
+      "id": "c008",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Battalion 1",
+          "Engine 2",
+          "Medic 2"
+        ],
+        "status": "working"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Battalion 1",
+          "Engine 2",
+          "Medic 2"
+        ],
+        "status": "working"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Bellwether Command",
+      "expected_incident": "i01",
+      "predicted_incident": "inc-01"
+    },
+    {
+      "id": "c009",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": null,
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "working"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "unknown",
+        "street": null,
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "working"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": false,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": false,
+      "location_as_heard": null,
+      "expected_incident": "i01",
+      "predicted_incident": "inc-01"
+    },
+    {
+      "id": "c010",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": null,
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "under_control"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": null,
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "under_control"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": "i01",
+      "predicted_incident": "inc-01"
+    },
+    {
+      "id": "c011",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "unknown",
+        "street": "Bellwether Avenue",
+        "units": [],
+        "status": "under_control"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "unknown",
+        "street": "Bellwether Avenue",
+        "units": [],
+        "status": "under_control"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Bellwether Command",
+      "expected_incident": "i01",
+      "predicted_incident": "inc-01"
+    },
+    {
+      "id": "c012",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    },
+    {
+      "id": "c013",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Engine 1",
+          "Engine 2",
+          "Engine 3",
+          "Ladder 1",
+          "Medic 2"
+        ],
+        "status": "cleared"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Bellwether Avenue",
+        "units": [
+          "Engine 1",
+          "Engine 2",
+          "Engine 3",
+          "Ladder 1",
+          "Medic 2"
+        ],
+        "status": "cleared"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "1420 Bellwether Avenue",
+      "expected_incident": "i01",
+      "predicted_incident": "inc-01"
+    },
+    {
+      "id": "c014",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "vehicle_fire",
+        "street": "Gristmill Way",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "vehicle_fire",
+        "street": "Gristmill Way",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "300 Gristmill Way",
+      "expected_incident": "i02",
+      "predicted_incident": "inc-02"
+    },
+    {
+      "id": "c015",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Brush 4"
+        ],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Brush 4"
+        ],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    },
+    {
+      "id": "c016",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Brush 4"
+        ],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Brush 4"
+        ],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    },
+    {
+      "id": "c017",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "vehicle_fire",
+        "street": "Gristmill Way",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "on_scene"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "vehicle_fire",
+        "street": "Gristmill Way",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "on_scene"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Gristmill Way",
+      "expected_incident": "i02",
+      "predicted_incident": "inc-02"
+    },
+    {
+      "id": "c018",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "vehicle_fire",
+        "street": "Gristmill Way",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "under_control"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "vehicle_fire",
+        "street": "Gristmill Way",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "under_control"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Gristmill Way",
+      "expected_incident": "i02",
+      "predicted_incident": "inc-02"
+    },
+    {
+      "id": "c019",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": "Thimble Creek Road",
+        "units": [
+          "Brush 4",
+          "Engine 3",
+          "Tanker 4"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": "Thimble Creek Road",
+        "units": [
+          "Brush 4",
+          "Engine 3",
+          "Tanker 4"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Thimble Creek Road at Fallowmere Road",
+      "expected_incident": "i03",
+      "predicted_incident": "inc-03"
+    },
+    {
+      "id": "c020",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": null,
+        "units": [
+          "Brush 4",
+          "Tanker 4"
+        ],
+        "status": "on_scene"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": null,
+        "units": [
+          "Brush 4",
+          "Tanker 4"
+        ],
+        "status": "working"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": false
+      },
+      "all_match": false,
+      "location_as_heard": null,
+      "expected_incident": "i03",
+      "predicted_incident": "inc-03"
+    },
+    {
+      "id": "c021",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": "Thimble Creek Road",
+        "units": [
+          "Brush 4",
+          "Engine 1"
+        ],
+        "status": "working"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": "Thimble Creek Road",
+        "units": [
+          "Brush 4",
+          "Engine 1"
+        ],
+        "status": "working"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Thimble Creek Road",
+      "expected_incident": "i03",
+      "predicted_incident": "inc-03"
+    },
+    {
+      "id": "c022",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "medical",
+        "street": "Copperwick Lane",
+        "units": [
+          "Medic 2"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "medical",
+        "street": "Copperwick Lane",
+        "units": [
+          "Medic 2"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "66 Copperwick Lane",
+      "expected_incident": "i11",
+      "predicted_incident": "inc-04"
+    },
+    {
+      "id": "c023",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "vehicle_fire",
+        "street": "Gristmill Way",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "cleared"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "vehicle_fire",
+        "street": "Gristmill Way",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "cleared"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Gristmill Way",
+      "expected_incident": "i02",
+      "predicted_incident": "inc-02"
+    },
+    {
+      "id": "c024",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "gas_leak",
+        "street": "Ferrier Street",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "gas_leak",
+        "street": "Ferrier Street",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "812 Ferrier Street",
+      "expected_incident": "i05",
+      "predicted_incident": "inc-05"
+    },
+    {
+      "id": "c025",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Battalion 1"
+        ],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Battalion 1"
+        ],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    },
+    {
+      "id": "c026",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "gas_leak",
+        "street": "Ferrier Street",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "on_scene"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "unknown",
+        "street": "Ferrier Street",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "on_scene"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": false,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": false,
+      "location_as_heard": "812 Ferrier",
+      "expected_incident": "i05",
+      "predicted_incident": "inc-05"
+    },
+    {
+      "id": "c027",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": null,
+        "units": [
+          "Brush 4"
+        ],
+        "status": "under_control"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": null,
+        "units": [
+          "Brush 4"
+        ],
+        "status": "under_control"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": "i03",
+      "predicted_incident": "inc-03"
+    },
+    {
+      "id": "c028",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "gas_leak",
+        "street": "Ferrier Street",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "working"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "gas_leak",
+        "street": "Ferrier Street",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "working"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Ferrier Street",
+      "expected_incident": "i05",
+      "predicted_incident": "inc-05"
+    },
+    {
+      "id": "c029",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": "Wickerbrook Drive",
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": "Wickerbrook Drive",
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "55 Wickerbrook Drive, building 2",
+      "expected_incident": "i04",
+      "predicted_incident": "inc-06"
+    },
+    {
+      "id": "c030",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": "Wickerbrook Drive",
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "on_scene"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": "Wickerbrook Drive",
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "on_scene"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "55 Wickerbrook Drive",
+      "expected_incident": "i04",
+      "predicted_incident": "inc-06"
+    },
+    {
+      "id": "c031",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": null,
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "cancelled"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": null,
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "cancelled"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "apartment 2C",
+      "expected_incident": "i04",
+      "predicted_incident": "inc-06"
+    },
+    {
+      "id": "c032",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "gas_leak",
+        "street": "Ferrier Street",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "cleared"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "gas_leak",
+        "street": "Ferrier Street",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "cleared"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Ferrier Street",
+      "expected_incident": "i05",
+      "predicted_incident": "inc-05"
+    },
+    {
+      "id": "c033",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": "Thimble Creek Road",
+        "units": [
+          "Brush 4",
+          "Engine 1",
+          "Engine 3",
+          "Tanker 4"
+        ],
+        "status": "cleared"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "wildland_fire",
+        "street": "Thimble Creek Road",
+        "units": [
+          "Brush 4",
+          "Engine 1",
+          "Engine 3",
+          "Tanker 4"
+        ],
+        "status": "cleared"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Thimble Creek",
+      "expected_incident": "i03",
+      "predicted_incident": "inc-03"
+    },
+    {
+      "id": "c034",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Engine 1"
+        ],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Engine 1"
+        ],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    },
+    {
+      "id": "c035",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "mva_with_fire",
+        "street": "County Road 12",
+        "units": [
+          "Battalion 1",
+          "Engine 3",
+          "Medic 2"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "mva_with_fire",
+        "street": "County Road 12",
+        "units": [
+          "Battalion 1",
+          "Engine 3",
+          "Medic 2"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "County Road 12 at Kestrel Ridge Road",
+      "expected_incident": "i06",
+      "predicted_incident": "inc-07"
+    },
+    {
+      "id": "c036",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "mva_with_fire",
+        "street": "County Road 12",
+        "units": [
+          "Engine 3"
+        ],
+        "status": "on_scene"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "mva_with_fire",
+        "street": "County Road 12",
+        "units": [
+          "Engine 3"
+        ],
+        "status": "on_scene"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "County Road 12",
+      "expected_incident": "i06",
+      "predicted_incident": "inc-07"
+    },
+    {
+      "id": "c037",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "mva_with_fire",
+        "street": null,
+        "units": [
+          "Engine 3",
+          "Medic 2"
+        ],
+        "status": "under_control"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "mva_with_fire",
+        "street": null,
+        "units": [
+          "Engine 3",
+          "Medic 2"
+        ],
+        "status": "under_control"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": "i06",
+      "predicted_incident": "inc-07"
+    },
+    {
+      "id": "c038",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Engine 2"
+        ],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Engine 2"
+        ],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    },
+    {
+      "id": "c039",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Engine 1",
+          "Engine 2",
+          "Ladder 1"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Engine 1",
+          "Engine 2",
+          "Ladder 1"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "27 Lanternfield Drive",
+      "expected_incident": "i07",
+      "predicted_incident": "inc-08"
+    },
+    {
+      "id": "c040",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Engine 1"
+        ],
+        "status": "on_scene"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Engine 1"
+        ],
+        "status": "working"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": false
+      },
+      "all_match": false,
+      "location_as_heard": "27 Lanternfield",
+      "expected_incident": "i07",
+      "predicted_incident": "inc-08"
+    },
+    {
+      "id": "c041",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "working"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Ladder 1"
+        ],
+        "status": "working"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Lanternfield Command",
+      "expected_incident": "i07",
+      "predicted_incident": "inc-08"
+    },
+    {
+      "id": "c042",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "mva_with_fire",
+        "street": "County Road 12",
+        "units": [
+          "Battalion 1",
+          "Engine 3"
+        ],
+        "status": "cleared"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "mva_with_fire",
+        "street": "County Road 12",
+        "units": [
+          "Battalion 1",
+          "Engine 3"
+        ],
+        "status": "cleared"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "County Road 12",
+      "expected_incident": "i06",
+      "predicted_incident": "inc-07"
+    },
+    {
+      "id": "c043",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Engine 2",
+          "Ladder 1"
+        ],
+        "status": "under_control"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Engine 2",
+          "Ladder 1"
+        ],
+        "status": "under_control"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Lanternfield Command",
+      "expected_incident": "i07",
+      "predicted_incident": "inc-08"
+    },
+    {
+      "id": "c044",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "other_incident",
+        "street": "Ostler Street",
+        "units": [
+          "Engine 3"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "other_incident",
+        "street": "Ostler Street",
+        "units": [
+          "Engine 3"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "15 Ostler Street",
+      "expected_incident": "i13",
+      "predicted_incident": "inc-09"
+    },
+    {
+      "id": "c045",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Engine 1",
+          "Ladder 1"
+        ],
+        "status": "cleared"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "structure_fire",
+        "street": "Lanternfield Drive",
+        "units": [
+          "Engine 1",
+          "Ladder 1"
+        ],
+        "status": "cleared"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Lanternfield Drive",
+      "expected_incident": "i07",
+      "predicted_incident": "inc-08"
+    },
+    {
+      "id": "c046",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "smoke_investigation",
+        "street": "Saltbox Road",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "smoke_investigation",
+        "street": "Saltbox Road",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "640 Saltbox Road",
+      "expected_incident": "i08",
+      "predicted_incident": "inc-10"
+    },
+    {
+      "id": "c047",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "smoke_investigation",
+        "street": "Saltbox Road",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "cancelled"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "smoke_investigation",
+        "street": "Saltbox Road",
+        "units": [
+          "Engine 2"
+        ],
+        "status": "cancelled"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Saltbox Road",
+      "expected_incident": "i08",
+      "predicted_incident": "inc-10"
+    },
+    {
+      "id": "c048",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": "Quillon Avenue",
+        "units": [
+          "Engine 3"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": "Quillon Avenue",
+        "units": [
+          "Engine 3"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Quillon Avenue Self Storage, 400 Quillon Avenue",
+      "expected_incident": "i09",
+      "predicted_incident": "inc-11"
+    },
+    {
+      "id": "c049",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": "Quillon Avenue",
+        "units": [
+          "Engine 3"
+        ],
+        "status": "cancelled"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "fire_alarm",
+        "street": "Quillon Avenue",
+        "units": [
+          "Engine 3"
+        ],
+        "status": "cancelled"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "400 Quillon Avenue",
+      "expected_incident": "i09",
+      "predicted_incident": "inc-11"
+    },
+    {
+      "id": "c050",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "other_fire",
+        "street": "Ashcomb Street",
+        "units": [
+          "Engine 1"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "other_fire",
+        "street": "Ashcomb Street",
+        "units": [
+          "Engine 1"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "210 Ashcomb Street",
+      "expected_incident": "i10",
+      "predicted_incident": "inc-12"
+    },
+    {
+      "id": "c051",
+      "expected": {
+        "is_fire": true,
+        "incident_type": "other_fire",
+        "street": "Ashcomb Street",
+        "units": [
+          "Engine 1"
+        ],
+        "status": "under_control"
+      },
+      "model": {
+        "is_fire": true,
+        "incident_type": "other_fire",
+        "street": "Ashcomb Street",
+        "units": [
+          "Engine 1"
+        ],
+        "status": "under_control"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "Ashcomb Street",
+      "expected_incident": "i10",
+      "predicted_incident": "inc-12"
+    },
+    {
+      "id": "c052",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "medical",
+        "street": "Quarrystone Drive",
+        "units": [
+          "Medic 2"
+        ],
+        "status": "dispatched"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "medical",
+        "street": "Quarrystone Drive",
+        "units": [
+          "Medic 2"
+        ],
+        "status": "dispatched"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": "90 Quarrystone Drive",
+      "expected_incident": "i12",
+      "predicted_incident": "inc-13"
+    },
+    {
+      "id": "c053",
+      "expected": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Battalion 1"
+        ],
+        "status": "none"
+      },
+      "model": {
+        "is_fire": false,
+        "incident_type": "not_incident",
+        "street": null,
+        "units": [
+          "Battalion 1"
+        ],
+        "status": "none"
+      },
+      "match": {
+        "is_fire": true,
+        "incident_type": true,
+        "street": true,
+        "units": true,
+        "status": true
+      },
+      "all_match": true,
+      "location_as_heard": null,
+      "expected_incident": null,
+      "predicted_incident": null
+    }
+  ]
+}

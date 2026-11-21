@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c024",
+  "created_at": "2026-11-21T15:34:18+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "gas_leak",
+    "is_fire": false,
+    "location_as_heard": "812 Ferrier Street",
+    "status": "dispatched",
+    "summary": "Engine 2 is dispatched to a residence on Ferrier Street for an odor of natural gas.",
+    "units": [
+      "Engine 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_068e0cb2165557e0016b01b9f8216887d296665a54dfb40ac0",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1047,
+    "output_tokens": 105,
+    "reasoning_tokens": 32,
+    "requests": 1
+  }
+}

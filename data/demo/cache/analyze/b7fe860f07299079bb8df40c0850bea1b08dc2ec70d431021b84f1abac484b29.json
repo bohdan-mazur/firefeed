@@ -1,0 +1,28 @@
+{
+  "cache_format": 1,
+  "call_id": "c006",
+  "created_at": "2026-11-21T15:33:49+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "structure_fire",
+    "is_fire": true,
+    "location_as_heard": "1420 Bellwether Avenue",
+    "status": "working",
+    "summary": "Engine 1 reports smoke showing from the second floor and is stretching a line while assuming command until Battalion 1 arrives.",
+    "units": [
+      "Engine 1",
+      "Battalion 1"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_07dece0c238e032a016b01b9d9014487d2a8b88c9394a55cd1",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1053,
+    "output_tokens": 176,
+    "reasoning_tokens": 93,
+    "requests": 1
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "cache_format": 1,
+  "call_id": "c008",
+  "created_at": "2026-11-21T15:33:54+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "structure_fire",
+    "is_fire": true,
+    "location_as_heard": "Bellwether Command",
+    "status": "working",
+    "summary": "Battalion 1 takes command of a working second-floor bedroom fire and requests Engine 2 and Medic 2.",
+    "units": [
+      "Battalion 1",
+      "Engine 2",
+      "Medic 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_07649b8f2d326e60016b01b9df048887d2b249d00f143f508e",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1047,
+    "output_tokens": 146,
+    "reasoning_tokens": 62,
+    "requests": 1
+  }
+}

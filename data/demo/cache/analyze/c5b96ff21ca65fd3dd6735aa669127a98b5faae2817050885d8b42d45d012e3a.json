@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c048",
+  "created_at": "2026-11-21T15:35:10+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "fire_alarm",
+    "is_fire": true,
+    "location_as_heard": "Quillon Avenue Self Storage, 400 Quillon Avenue",
+    "status": "dispatched",
+    "summary": "Engine 3 is dispatched to a smoke detector fire alarm at Quillon Avenue Self Storage.",
+    "units": [
+      "Engine 3"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0d8b4556407f98b8016b01ba2c229087d289db06e758f3dcda",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1053,
+    "output_tokens": 107,
+    "reasoning_tokens": 29,
+    "requests": 1
+  }
+}

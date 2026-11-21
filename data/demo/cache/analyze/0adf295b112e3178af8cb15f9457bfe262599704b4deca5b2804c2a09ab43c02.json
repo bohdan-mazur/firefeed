@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c047",
+  "created_at": "2026-11-21T15:35:09+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.67,
+    "incident_type": "smoke_investigation",
+    "is_fire": true,
+    "location_as_heard": "Saltbox Road",
+    "status": "cancelled",
+    "summary": "Engine 2 found a commercial barbecue smoker operating normally behind a restaurant, with no fire or action needed.",
+    "units": [
+      "Engine 2"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0104021ff71066fc016b01ba27a5e887d2965f25ae39491f63",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1048,
+    "output_tokens": 396,
+    "reasoning_tokens": 320,
+    "requests": 1
+  }
+}

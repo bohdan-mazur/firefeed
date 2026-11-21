@@ -1,0 +1,27 @@
+{
+  "cache_format": 1,
+  "call_id": "c044",
+  "created_at": "2026-11-21T15:35:01+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.98,
+    "incident_type": "other_incident",
+    "is_fire": false,
+    "location_as_heard": "15 Ostler Street",
+    "status": "dispatched",
+    "summary": "Engine 3 is dispatched to help an elderly resident with a chirping low-battery smoke detector; no smoke or fire is reported.",
+    "units": [
+      "Engine 3"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_042a3ceb08814c41016b01ba22ea8c87d29e1b1e13f9b56a53",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1060,
+    "output_tokens": 79,
+    "reasoning_tokens": 0,
+    "requests": 1
+  }
+}

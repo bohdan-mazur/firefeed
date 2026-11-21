@@ -1,0 +1,28 @@
+{
+  "cache_format": 1,
+  "call_id": "c020",
+  "created_at": "2026-11-21T15:34:12+00:00",
+  "model": "gpt-6-luna",
+  "output": {
+    "confidence": 0.99,
+    "incident_type": "wildland_fire",
+    "is_fire": true,
+    "location_as_heard": null,
+    "status": "working",
+    "summary": "Brush 4 reports a two-acre grass fire moving toward the tree line, and Tanker 4 is directed to set up a dump tank.",
+    "units": [
+      "Brush 4",
+      "Tanker 4"
+    ]
+  },
+  "prompt_version": "2026-11-21.1",
+  "response_id": "resp_0614bd9368121d18016b01b9f1c36c87d2a8b18cfe1d958da2",
+  "usage": {
+    "audio_seconds": 0.0,
+    "cached_input_tokens": 0,
+    "input_tokens": 1058,
+    "output_tokens": 82,
+    "reasoning_tokens": 0,
+    "requests": 1
+  }
+}

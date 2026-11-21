@@ -1,0 +1,6 @@
+# LF everywhere, so data files, the answer cache and hashes read the same on every OS.
+* text=auto eol=lf
+*.png binary
+*.ico binary
+*.wav binary
+*.mp3 binary

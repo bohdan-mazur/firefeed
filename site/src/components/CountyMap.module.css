@@ -1,0 +1,150 @@
+.map {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+}
+
+.frame {
+  fill: none;
+  stroke: var(--color-rule);
+}
+
+.water {
+  fill: none;
+  stroke: var(--color-water);
+  stroke-width: 6;
+  stroke-linecap: round;
+  opacity: 0.5;
+}
+
+.waterEdge {
+  fill: none;
+  stroke: var(--color-water);
+  stroke-width: 1;
+  stroke-dasharray: 2 5;
+}
+
+.waterLabel {
+  font: italic 12px / 1 var(--font-serif);
+  fill: var(--color-tone-none);
+  paint-order: stroke;
+  stroke: var(--color-surface);
+  stroke-width: 4px;
+}
+
+.street {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.r1 {
+  stroke: var(--color-road-main);
+  stroke-width: 2.6;
+}
+
+.r2 {
+  stroke: var(--color-road);
+  stroke-width: 1.6;
+}
+
+.r3 {
+  stroke: var(--color-road-minor);
+  stroke-width: 1.2;
+}
+
+.label {
+  font: 600 10px / 1 var(--font-sans);
+  letter-spacing: 0.05em;
+  fill: var(--color-muted);
+  paint-order: stroke;
+  stroke: var(--color-surface);
+  stroke-width: 4px;
+}
+
+.minor {
+  font-weight: 500;
+}
+
+.town {
+  font: 600 14px / 1 var(--font-serif);
+  letter-spacing: 0.3em;
+  fill: var(--color-text);
+}
+
+.pin {
+  cursor: pointer;
+}
+
+.pin:focus-visible {
+  outline: none;
+}
+
+.pin:focus-visible .core {
+  stroke: var(--color-text);
+  stroke-width: 2.5;
+}
+
+.core {
+  fill: var(--color-surface);
+  stroke: var(--color-decor);
+  stroke-width: 1.6;
+  transition: fill var(--motion-base) var(--ease-out), r var(--motion-base) var(--ease-out);
+}
+
+.ring {
+  fill: none;
+  stroke-width: 1.6;
+  opacity: 0;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.seen.fire .core {
+  fill: color-mix(in srgb, var(--color-accent) 60%, white);
+  stroke: var(--color-surface);
+}
+
+.seen.other .core {
+  fill: color-mix(in srgb, var(--color-tone-none) 55%, white);
+  stroke: var(--color-surface);
+}
+
+.on .core,
+.pin:hover .core {
+  r: 7.5px;
+}
+
+.on.fire .core {
+  fill: var(--color-accent);
+}
+
+.on.other .core {
+  fill: var(--color-tone-none);
+}
+
+.on.fire .ring {
+  stroke: var(--color-accent);
+  animation: pulse 1.6s var(--ease-out) infinite;
+}
+
+.on.other .ring {
+  stroke: var(--color-tone-none);
+  animation: pulse 1.6s var(--ease-out) infinite;
+}
+
+@keyframes pulse {
+  from {
+    r: 7px;
+    opacity: 0.9;
+  }
+  to {
+    r: 30px;
+    opacity: 0;
+  }
+}
